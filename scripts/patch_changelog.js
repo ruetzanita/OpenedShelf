@@ -17,7 +17,7 @@
  */
 
 const fs = require('fs');
-let content = fs.readFileSync('OpenedShelf_changelog.md', 'utf8');
+let content = fs.readFileSync('CHANGELOG.md', 'utf8');
 
 const newEntry = `
 * **Taxonomy Pipeline Streaming Architecture**:
@@ -27,4 +27,4 @@ const newEntry = `
 `;
 
 content = content.replace('### May 30, 2026\n', '### May 30, 2026\n' + newEntry);
-fs.writeFileSync('OpenedShelf_changelog.md', content);
+fs.writeFileSync('CHANGELOG.md', content);
