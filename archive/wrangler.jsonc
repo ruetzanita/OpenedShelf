@@ -1,0 +1,13 @@
+{
+  "name": "openedshelf-landing",
+  "compatibility_date": "2026-05-16",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "src/worker.js",
+  "routes": [
+    { "pattern": "openedshelf.org", "custom_domain": true },
+    { "pattern": "www.openedshelf.org", "custom_domain": true }
+  ],
+  "assets": {
+    "directory": "./public"
+  }
+}

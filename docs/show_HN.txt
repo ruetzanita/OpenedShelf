@@ -1,0 +1,37 @@
+Show HN: OpenedShelf – A Boolean book discovery engine with a community taxonomy
+
+I built this because of a book called "1913" by Florian Illies — a month-by-month portrait of the last year before the world changed. It covers Louis Armstrong picking up a cornet, Coco Chanel opening her first shop, Kafka writing agonizing love letters, and Stravinsky composing The Rite of Spring.
+
+When I finished it, I didn't want one "similar" book — I wanted a dozen. A cookbook from that world. A Russian political history. A French novel set in that exact cultural moment.
+
+Every search tool I tried gave me one single lane: pre-war European history, then straight into WWI military strategy. None of them could do what my brain was doing: moving sideways across the same slice of time and theme.
+
+The mainstream discovery model is broken by design. Recommendation algorithms optimize for sales volume, recency bias, and algorithmic engagement loops. Search engines reduce books to keyword matching or fuzzy vector embeddings that hallucinate recommendations based on popular consensus rather than textual reality.
+
+So I built OpenedShelf (https://openedshelf.org).
+
+OpenedShelf is a Boolean book discovery engine built on a three-tier, community-governed taxonomy:
+1. Thematic Tags (Tier 1): Genre-agnostic, objective, verifiable textual properties (e.g., isolated, resource_scarcity, first_person_pov, unreliable_narrator).
+2. Genre Identities (Tier 2): Standard literary classifications (e.g., genre:space_opera, genre:cozy_mystery, genre:hard_scifi).
+3. Genre Tropes (Tier 3): Verifiable narrative devices that happen inside a plot (e.g., genre:locked_room, genre:enemies_to_lovers, genre:generation_ship).
+
+Key aspects of how it works:
+
+1. Strict Boolean Intersection (AND Logic): Stacking tags applies strict set intersection. There are no sponsored placements, popularity boosts, or affiliate steering.
+
+2. "The Rabbit Hole" (Zero-Result Discovery): When detailed queries run out of results, that zero-result state is a discovery in itself — proof that the exact book you are imagining hasn't been tagged yet in the open catalog, or hasn't been written yet. The UI breaks down the query step-by-step, shows where the intersection collapsed, offers a "one step back" breadcrumb of alternative titles, and provides a shareable URL for that conceptual gap.
+
+3. "Brutally Efficient" Edge Architecture: Server-rendered plain HTML from Cloudflare Workers (sub-50ms TTFB), zero client-side JS frameworks, zero tracking/cookies, system font stack, and dynamic CSS spines if book covers fail to load on high-latency networks.
+
+4. Offline Pipeline & SQLite Edge Storage: The multi-gigabyte Open Library catalog, Library of Congress (LOC MARC 21 / BIBFRAME Hubs) bibliographic metadata, Wikidata, and Project Gutenberg are processed offline via an 8-stage pipeline into an immutable, versioned SQLite database on Cloudflare R2, served via a read-only query service. Cloudflare D1 handles transactional tag proposals.
+
+5. Open Governance: The taxonomy is dedicated to the public domain (CC0 1.0), and the engine is licensed under GNU AGPLv3. The taxonomy is governed by a community Library Council with public written vetoes.
+
+Try a few starting rabbit holes:
+- The 1913 Cultural Moment: https://openedshelf.org/search?q=1913+pre_war_europe
+- Isolation in Speculative Fiction: https://openedshelf.org/search?q=isolated+resource_scarcity+genre:space_opera
+- Cozy Found Family: https://openedshelf.org/search?q=genre:cozy_fantasy+found_family
+- The Intentional Gap: https://openedshelf.org/search?q=genre:cyberpunk+genre:regency_romance
+
+Code: https://github.com/openedshelf/openedshelf (AGPLv3)
+Self-Hosting Guide: https://github.com/openedshelf/openedshelf/blob/main/docs/OpenedShelf_deploy.md

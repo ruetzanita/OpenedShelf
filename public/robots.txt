@@ -1,0 +1,44 @@
+# OpenedShelf - Robots Exclusion Policy
+# https://openedshelf.org
+
+User-agent: *
+Allow: /
+Allow: /about
+Allow: /credits
+Allow: /api/credits
+Allow: /rabbithole.png
+Allow: /rabbit_reading.png
+Allow: /rabbit_scribbling.png
+Allow: /rabbit_surrounded.png
+Allow: /fuzzy_fall_quizzical.png
+
+# Prevent automated scraping of compute-heavy search and ingestion endpoints
+Disallow: /api/search
+Disallow: /search
+Disallow: /api/submit-tag
+Disallow: /submit-tag
+Disallow: /api/propose
+Disallow: /propose
+Disallow: /verify
+
+# Block aggressive AI / commercial scraping bots from hammering the raw JSON API
+User-agent: GPTBot
+Disallow: /api/
+Disallow: /search
+
+User-agent: CCBot
+Disallow: /api/
+Disallow: /search
+
+User-agent: anthropic-ai
+Disallow: /api/
+Disallow: /search
+
+User-agent: Claude-Web
+Disallow: /api/
+Disallow: /search
+
+User-agent: Bytespider
+Disallow: /
+
+Sitemap: https://openedshelf.org/sitemap.xml

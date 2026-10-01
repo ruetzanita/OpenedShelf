@@ -1,0 +1,22 @@
+{
+  "name": "openedshelf",
+  "type": "module",
+  "scripts": {
+    "test": "node tests/test_preflight_database_integrity.mjs && node tests/test_search_service.mjs && node tests/test_query_pool_resilience.mjs && node tests/test_worker_edge_resilience.mjs",
+    "dev": "node scripts/dev_server.mjs",
+    "start": "node scripts/dev_server.mjs",
+    "deploy": "wrangler deploy",
+    "deploy:dry-run": "wrangler deploy --dry-run"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1127.0",
+    "@aws-sdk/lib-storage": "^3.1127.0",
+    "better-sqlite3": "^12.9.0",
+    "fast-xml-parser": "^5.8.0",
+    "sqlite3": "^6.0.1"
+  },
+  "allowScripts": {
+    "better-sqlite3@12.9.0": true,
+    "sqlite3@6.0.1": true
+  }
+}

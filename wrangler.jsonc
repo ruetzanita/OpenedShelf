@@ -1,0 +1,57 @@
+{
+	"name": "openedshelf-landing",
+	"compatibility_date": "2026-05-16",
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
+	"main": "src/worker.js",
+	"routes": [
+		{
+			"pattern": "openedshelf.org",
+			"custom_domain": true
+		},
+		{
+			"pattern": "www.openedshelf.org",
+			"custom_domain": true
+		}
+	],
+	"assets": {
+		"directory": "./public"
+	},
+	"vars": {
+		"SEARCH_API_URL": "http://127.0.0.1:8788"
+	},
+	"r2_buckets": [
+		{
+			"bucket_name": "openedshelf-search-database",
+			"binding": "openedshelf_search_database",
+			"remote": true
+		}
+	],
+	"d1_databases": [
+		{
+			"binding": "openedshelf_master",
+			"database_name": "openedshelf_master",
+			"database_id": "7b2b6477-e0f0-4cde-ac52-95ce02bb3991",
+			"remote": true
+		}
+	],
+	"ratelimits": [
+		{
+			"name": "RATE_LIMIT_SEARCH",
+			"namespace_id": "1001",
+			"simple": {
+				"limit": 60,
+				"period": 60
+			}
+		},
+		{
+			"name": "RATE_LIMIT_SUBMIT",
+			"namespace_id": "1002",
+			"simple": {
+				"limit": 10,
+				"period": 60
+			}
+		}
+	]
+}

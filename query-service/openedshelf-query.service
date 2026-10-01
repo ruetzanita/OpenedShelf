@@ -1,0 +1,48 @@
+[Unit]
+Description=OpenedShelf Read-Only SQLite Query Service
+Documentation=https://github.com/OpenedShelf/OpenShelf
+After=network.target local-fs.target
+
+[Service]
+Type=simple
+User=openedshelf
+Group=openedshelf
+WorkingDirectory=/opt/openedshelf
+ExecStart=/usr/bin/node query-service/server.mjs
+
+# Automatic Restart Policies
+Restart=always
+RestartSec=3s
+RestartPreventExitStatus=0
+TimeoutStopSec=15s
+
+# Environment Configuration
+Environment=NODE_ENV=production
+Environment=PORT=8788
+Environment=R2_DATABASE_PATH=/var/data/openedshelf/openedshelf_master.sqlite
+Environment=SQLITE_MMAP_SIZE_MB=2048
+Environment=SQLITE_CACHE_SIZE_KB=65536
+Environment=QUERY_POOL_SIZE=4
+Environment=SEARCH_CACHE_TTL_MS=60000
+Environment=SEARCH_CACHE_MAX=1000
+Environment=QUERY_TIMEOUT_MS=10000
+EnvironmentFile=-/etc/openedshelf/query-service.env
+
+# Resource Limits & Isolation (Hardening for 23GB catalog)
+LimitNOFILE=65536
+MemoryMax=6G
+MemoryHigh=5G
+TasksMax=256
+CPUQuota=200%
+OOMScoreAdjust=-500
+
+# Security Hardening Sandbox
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectControlGroups=true
+PrivateTmp=true
+ReadOnlyPaths=/var/data/openedshelf
+
+[Install]
+WantedBy=multi-user.target

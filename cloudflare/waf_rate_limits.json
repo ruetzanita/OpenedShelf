@@ -1,0 +1,62 @@
+{
+  "description": "OpenedShelf Cloudflare WAF Rate Limiting & Abuse Prevention Ruleset",
+  "kind": "zone",
+  "phase": "http_ratelimit",
+  "rules": [
+    {
+      "description": "Rate limit tag proposal submissions (/submit-tag, /propose) to 10 req/min per IP",
+      "expression": "(http.request.uri.path in {\"/submit-tag\" \"/api/submit-tag\" \"/propose\" \"/api/propose\"}) and http.request.method eq \"POST\"",
+      "action": "block",
+      "action_parameters": {
+        "response": {
+          "status_code": 429,
+          "content_type": "application/json",
+          "content": "{\"error\":\"Too many submissions. Please wait 60 seconds before submitting another tag.\",\"retry_after\":60}"
+        }
+      },
+      "ratelimit": {
+        "characteristics": [
+          "ip.src"
+        ],
+        "period": 60,
+        "requests_per_period": 10,
+        "mitigation_timeout": 60
+      },
+      "enabled": true
+    },
+    {
+      "description": "Rate limit search API (/search, /api/search) to 60 req/min per IP while protecting metered users",
+      "expression": "(http.request.uri.path in {\"/search\" \"/api/search\"}) and http.request.method eq \"POST\" and not cf.client.bot",
+      "action": "block",
+      "action_parameters": {
+        "response": {
+          "status_code": 429,
+          "content_type": "application/json",
+          "content": "{\"error\":\"Search rate limit exceeded. Please wait a moment.\",\"retry_after\":60}"
+        }
+      },
+      "ratelimit": {
+        "characteristics": [
+          "ip.src"
+        ],
+        "period": 60,
+        "requests_per_period": 60,
+        "mitigation_timeout": 60
+      },
+      "enabled": true
+    },
+    {
+      "description": "Block aggressive AI scraping bots from querying catalog search APIs",
+      "expression": "(http.request.uri.path in {\"/search\" \"/api/search\"}) and (cf.bot_management.verified_bot eq false and cf.bot_management.score lt 20 or http.user_agent contains \"GPTBot\" or http.user_agent contains \"CCBot\" or http.user_agent contains \"Bytespider\")",
+      "action": "block",
+      "action_parameters": {
+        "response": {
+          "status_code": 403,
+          "content_type": "application/json",
+          "content": "{\"error\":\"Automated bulk scraping of search endpoints is not permitted. Please use official CC0 database dumps.\"}"
+        }
+      },
+      "enabled": true
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+# ==========================================
+# 🚨 CRITICAL CREDENTIALS & SECRETS
+# ==========================================
+local/
+.ssh_keys/
+"**Creator - DO NOT USE**"/
+"Hetzner Auth Key"*
+"Notes for Next time"*
+*.env
+*.env.*
+*.pem
+*.key
+*.cert
+*.crt
+
+# ==========================================
+# 📦 MASSIVE DATASETS & SQLITE DATABASES (>100MB)
+# ==========================================
+*.sqlite
+*.sqlite3
+*.sqlite-shm
+*.sqlite-wal
+*.db
+*.sql
+!db/d1_moderation_schema.sql
+!scripts/stats.sql
+dump_seed.sql
+ol_dump_latest.txt.gz
+Raw_Data/
+
+# ==========================================
+# 🛠️ CLOUDFLARE, WRANGLER & RUNTIMES
+# ==========================================
+.wrangler/
+.wrangler_home/
+.config/
+.stfolder/
+node_modules/
+
+# ==========================================
+# 🏗️ BUILD ARTIFACTS
+# ==========================================
+build/
+dist/
+
+# ==========================================
+# 📝 SCRATCH & LOCAL WORKSPACE
+# ==========================================
+merch.txt
+scratch/
+*.code-workspace
+.DS_Store
+*.log
+npm-debug.log*

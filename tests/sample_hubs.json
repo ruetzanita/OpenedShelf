@@ -1,0 +1,850 @@
+[
+  {
+    "@context": "http://id.loc.gov/resources/hubs/context.json",
+    "@graph": [
+      {
+        "@id": "http://id.loc.gov/resources/hubs/0000022a-4439-3047-ed1d-ed5cbada017d",
+        "@type": [
+          "bf:Hub",
+          "bf:Work"
+        ],
+        "bf:adminMetadata": [
+          {
+            "@id": "_:n02c2afd7897d4aa68bd6deac87445d80b1"
+          },
+          {
+            "@id": "_:n02c2afd7897d4aa68bd6deac87445d80b2"
+          },
+          {
+            "@id": "_:n02c2afd7897d4aa68bd6deac87445d80b3"
+          },
+          {
+            "@id": "_:n02c2afd7897d4aa68bd6deac87445d80b5"
+          }
+        ],
+        "bf:identifiedBy": {
+          "@id": "_:n02c2afd7897d4aa68bd6deac87445d80b6"
+        },
+        "bf:note": {
+          "@id": "_:n02c2afd7897d4aa68bd6deac87445d80b8"
+        },
+        "bf:title": {
+          "@id": "_:n02c2afd7897d4aa68bd6deac87445d80b9"
+        },
+        "bflc:marcKey": "130  $aSociologija (Klaipėda, Lithuania)",
+        "dcterms:isPartOf": {
+          "@id": "http://id.loc.gov/resources/hubs"
+        }
+      },
+      {
+        "@id": "_:n02c2afd7897d4aa68bd6deac87445d80b1",
+        "@type": "bf:AdminMetadata",
+        "bf:agent": {
+          "@id": "http://id.loc.gov/vocabulary/organizations/dlcmrc"
+        },
+        "bf:date": {
+          "@type": "xsd:dateTime",
+          "@value": "2025-04-24T19:13:48.246658-04:00"
+        },
+        "bf:generationProcess": {
+          "@id": "https://github.com/lcnetdev/marc2bibframe2/tree/v2.10-dev"
+        },
+        "bf:status": {
+          "@id": "http://id.loc.gov/vocabulary/mstatus/c"
+        }
+      },
+      {
+        "@id": "_:n02c2afd7897d4aa68bd6deac87445d80b2",
+        "@type": "bf:AdminMetadata",
+        "bf:date": {
+          "@type": "xsd:dateTime",
+          "@value": "2024-05-03T07:07:18"
+        },
+        "bf:status": {
+          "@id": "http://id.loc.gov/vocabulary/mstatus/c"
+        }
+      },
+      {
+        "@id": "_:n02c2afd7897d4aa68bd6deac87445d80b3",
+        "@type": "bf:AdminMetadata",
+        "bf:descriptionLevel": {
+          "@id": "http://id.loc.gov/ontologies/bibframe-2-5-0/"
+        },
+        "bf:identifiedBy": {
+          "@id": "_:n02c2afd7897d4aa68bd6deac87445d80b4"
+        },
+        "bflc:encodingLevel": {
+          "@id": "http://id.loc.gov/vocabulary/menclvl/7"
+        }
+      },
+      {
+        "@id": "_:n02c2afd7897d4aa68bd6deac87445d80b4",
+        "@type": "bf:Local",
+        "bf:assigner": {
+          "@id": "http://id.loc.gov/vocabulary/organizations/dlc"
+        },
+        "rdf:value": "0000022a-4439-3047-ed1d-ed5cbada017d"
+      },
+      {
+        "@id": "_:n02c2afd7897d4aa68bd6deac87445d80b5",
+        "@type": "bf:AdminMetadata",
+        "bf:date": {
+          "@type": "xsd:date",
+          "@value": "2003-05-30"
+        },
+        "bf:status": {
+          "@id": "http://id.loc.gov/vocabulary/mstatus/n"
+        }
+      },
+      {
+        "@id": "_:n02c2afd7897d4aa68bd6deac87445d80b6",
+        "@type": "bf:Identifier",
+        "bf:qualifier": "LC-ILSDB",
+        "bf:source": {
+          "@id": "_:n02c2afd7897d4aa68bd6deac87445d80b7"
+        },
+        "rdf:value": "13218374"
+      },
+      {
+        "@id": "_:n02c2afd7897d4aa68bd6deac87445d80b7",
+        "@type": "bf:Source",
+        "bf:code": "local"
+      },
+      {
+        "@id": "_:n02c2afd7897d4aa68bd6deac87445d80b8",
+        "@type": [
+          "bf:Note",
+          "http://id.loc.gov/vocabulary/mnotetype/descsource"
+        ],
+        "rdfs:label": "Created from azbib."
+      },
+      {
+        "@id": "_:n02c2afd7897d4aa68bd6deac87445d80b9",
+        "@type": "bf:Title",
+        "bf:mainTitle": "Sociologija (Klaipėda, Lithuania)"
+      }
+    ],
+    "@id": "/resources/hubs/0000022a-4439-3047-ed1d-ed5cbada017d"
+  },
+  {
+    "@context": "http://id.loc.gov/resources/hubs/context.json",
+    "@graph": [
+      {
+        "@id": "http://id.loc.gov/resources/hubs/00000431-18c1-0923-fa27-aff05222a156",
+        "@type": [
+          "bf:Hub",
+          "bf:Work"
+        ],
+        "bf:adminMetadata": [
+          {
+            "@id": "_:n5fef57be84644d08bb0cefaa31dee72eb1"
+          },
+          {
+            "@id": "_:n5fef57be84644d08bb0cefaa31dee72eb2"
+          },
+          {
+            "@id": "_:n5fef57be84644d08bb0cefaa31dee72eb5"
+          }
+        ],
+        "bf:contribution": {
+          "@id": "_:n5fef57be84644d08bb0cefaa31dee72eb6"
+        },
+        "bf:genreForm": {
+          "@id": "http://id.loc.gov/authorities/genreForms/gf2014027007"
+        },
+        "bf:identifiedBy": [
+          {
+            "@id": "_:n5fef57be84644d08bb0cefaa31dee72eb7"
+          },
+          {
+            "@id": "_:n5fef57be84644d08bb0cefaa31dee72eb8"
+          }
+        ],
+        "bf:musicMedium": {
+          "@id": "_:n5fef57be84644d08bb0cefaa31dee72eb9"
+        },
+        "bf:note": [
+          {
+            "@id": "_:n5fef57be84644d08bb0cefaa31dee72eb10"
+          },
+          {
+            "@id": "_:n5fef57be84644d08bb0cefaa31dee72eb11"
+          },
+          {
+            "@id": "_:n5fef57be84644d08bb0cefaa31dee72eb12"
+          },
+          {
+            "@id": "_:n5fef57be84644d08bb0cefaa31dee72eb13"
+          }
+        ],
+        "bf:originPlace": {
+          "@id": "http://id.loc.gov/rwo/agents/n79058874"
+        },
+        "bf:title": {
+          "@id": "_:n5fef57be84644d08bb0cefaa31dee72eb14"
+        },
+        "bflc:marcKey": "1001 $aSermisy, Claudin de,$dapproximately 1490-1562.$tContre raison vous m'estes fort estrange",
+        "dcterms:isPartOf": {
+          "@id": "http://id.loc.gov/resources/hubs"
+        }
+      },
+      {
+        "@id": "_:n5fef57be84644d08bb0cefaa31dee72eb1",
+        "@type": "bf:AdminMetadata",
+        "bf:agent": {
+          "@id": "http://id.loc.gov/vocabulary/organizations/dlcmrc"
+        },
+        "bf:date": {
+          "@type": "xsd:dateTime",
+          "@value": "2025-04-26T00:46:06.489587-04:00"
+        },
+        "bf:generationProcess": {
+          "@id": "https://github.com/lcnetdev/marc2bibframe2/tree/v2.10-dev"
+        },
+        "bf:status": {
+          "@id": "http://id.loc.gov/vocabulary/mstatus/c"
+        }
+      },
+      {
+        "@id": "_:n5fef57be84644d08bb0cefaa31dee72eb2",
+        "@type": "bf:AdminMetadata",
+        "bf:descriptionConventions": {
+          "@id": "http://id.loc.gov/vocabulary/descriptionConventions/rda"
+        },
+        "bf:descriptionLanguage": {
+          "@id": "http://id.loc.gov/vocabulary/languages/eng"
+        },
+        "bf:descriptionLevel": {
+          "@id": "http://id.loc.gov/ontologies/bibframe-2-5-0/"
+        },
+        "bf:identifiedBy": {
+          "@id": "_:n5fef57be84644d08bb0cefaa31dee72eb3"
+        },
+        "bf:note": {
+          "@id": "_:n5fef57be84644d08bb0cefaa31dee72eb4"
+        }
+      },
+      {
+        "@id": "_:n5fef57be84644d08bb0cefaa31dee72eb3",
+        "@type": "bf:Local",
+        "bf:assigner": {
+          "@id": "http://id.loc.gov/vocabulary/organizations/dlc"
+        },
+        "rdf:value": "00000431-18c1-0923-fa27-aff05222a156"
+      },
+      {
+        "@id": "_:n5fef57be84644d08bb0cefaa31dee72eb4",
+        "@type": [
+          "bf:Note",
+          "http://id.loc.gov/vocabulary/mnotetype/internal"
+        ],
+        "rdfs:label": "040  $aWiSwKOS$beng$erda$cWiSwKOS"
+      },
+      {
+        "@id": "_:n5fef57be84644d08bb0cefaa31dee72eb5",
+        "@type": "bf:AdminMetadata",
+        "bf:agent": {
+          "@id": "http://id.loc.gov/vocabulary/organizations/wiswkos"
+        },
+        "bf:date": {
+          "@type": "xsd:date",
+          "@value": "2022-03-10"
+        },
+        "bf:status": {
+          "@id": "http://id.loc.gov/vocabulary/mstatus/n"
+        }
+      },
+      {
+        "@id": "_:n5fef57be84644d08bb0cefaa31dee72eb6",
+        "@type": [
+          "bf:Contribution",
+          "bf:PrimaryContribution"
+        ],
+        "bf:agent": {
+          "@id": "http://id.loc.gov/rwo/agents/n81048011"
+        },
+        "bf:role": {
+          "@id": "http://id.loc.gov/vocabulary/relators/ctb"
+        }
+      },
+      {
+        "@id": "_:n5fef57be84644d08bb0cefaa31dee72eb7",
+        "@type": "bf:Lccn",
+        "rdf:value": "no2022031082"
+      },
+      {
+        "@id": "_:n5fef57be84644d08bb0cefaa31dee72eb8",
+        "@type": "bf:OclcNumber",
+        "rdf:value": "oca14388427"
+      },
+      {
+        "@id": "_:n5fef57be84644d08bb0cefaa31dee72eb9",
+        "@type": "bf:MusicMedium",
+        "bflc:readMarc382": "3820 $asinger$n4$s4$2lcmpt"
+      },
+      {
+        "@id": "_:n5fef57be84644d08bb0cefaa31dee72eb10",
+        "@type": [
+          "bf:Note",
+          "http://id.loc.gov/vocabulary/mnotetype/datasource"
+        ],
+        "bf:preferredCitation": "Oxford Music Online, Dec. 15, 2021",
+        "rdfs:label": "(Contre raison vous m'estes fort estrange, 4vv)"
+      },
+      {
+        "@id": "_:n5fef57be84644d08bb0cefaa31dee72eb11",
+        "@type": [
+          "bf:Note",
+          "http://id.loc.gov/vocabulary/mnotetype/datasource"
+        ],
+        "bf:preferredCitation": "Computerized Mensural Music Editing WWW site, Dec. 15, 2021",
+        "rdfs:label": "(Contre raison)"
+      },
+      {
+        "@id": "_:n5fef57be84644d08bb0cefaa31dee72eb12",
+        "@type": [
+          "bf:Note",
+          "http://id.loc.gov/vocabulary/mnotetype/datanf"
+        ],
+        "bf:preferredCitation": [
+          "OCLC, Dec. 15, 2021",
+          "VIAF, Dec. 15, 2021"
+        ]
+      },
+      {
+        "@id": "_:n5fef57be84644d08bb0cefaa31dee72eb13",
+        "@type": [
+          "bf:Note",
+          "http://id.loc.gov/vocabulary/mnotetype/descsource"
+        ],
+        "rdfs:label": "Created from auth."
+      },
+      {
+        "@id": "_:n5fef57be84644d08bb0cefaa31dee72eb14",
+        "@type": "bf:Title",
+        "bf:mainTitle": "Contre raison vous m'estes fort estrange"
+      }
+    ],
+    "@id": "/resources/hubs/00000431-18c1-0923-fa27-aff05222a156"
+  },
+  {
+    "@context": "http://id.loc.gov/resources/hubs/context.json",
+    "@graph": [
+      {
+        "@id": "http://id.loc.gov/resources/hubs/00000e93-dcda-7c94-f773-6ff5bf5bb8b4",
+        "@type": [
+          "bf:Hub",
+          "bf:Work"
+        ],
+        "bf:adminMetadata": [
+          {
+            "@id": "_:n350729f3649e47beb756627b77174946b1"
+          },
+          {
+            "@id": "_:n350729f3649e47beb756627b77174946b2"
+          },
+          {
+            "@id": "_:n350729f3649e47beb756627b77174946b5"
+          },
+          {
+            "@id": "_:n350729f3649e47beb756627b77174946b6"
+          }
+        ],
+        "bf:contribution": {
+          "@id": "_:n350729f3649e47beb756627b77174946b7"
+        },
+        "bf:genreForm": {
+          "@id": "http://id.loc.gov/authorities/genreForms/gf2014027103"
+        },
+        "bf:identifiedBy": {
+          "@id": "_:n350729f3649e47beb756627b77174946b8"
+        },
+        "bf:musicMedium": {
+          "@id": "_:n350729f3649e47beb756627b77174946b9"
+        },
+        "bf:note": [
+          {
+            "@id": "_:n350729f3649e47beb756627b77174946b10"
+          },
+          {
+            "@id": "_:n350729f3649e47beb756627b77174946b11"
+          }
+        ],
+        "bf:title": [
+          {
+            "@id": "_:n350729f3649e47beb756627b77174946b12"
+          },
+          {
+            "@id": "_:n350729f3649e47beb756627b77174946b13"
+          }
+        ],
+        "bflc:marcKey": "1001 $aSamuēlean, Harutʻiwn,$d1906-1960.$tSari gisher",
+        "dcterms:isPartOf": {
+          "@id": "http://id.loc.gov/resources/hubs"
+        }
+      },
+      {
+        "@id": "_:n350729f3649e47beb756627b77174946b1",
+        "@type": "bf:AdminMetadata",
+        "bf:agent": {
+          "@id": "http://id.loc.gov/vocabulary/organizations/dlc"
+        },
+        "bf:date": {
+          "@type": "xsd:date",
+          "@value": "2018-08-15"
+        },
+        "bf:status": {
+          "@id": "http://id.loc.gov/vocabulary/mstatus/n"
+        }
+      },
+      {
+        "@id": "_:n350729f3649e47beb756627b77174946b2",
+        "@type": "bf:AdminMetadata",
+        "bf:descriptionConventions": {
+          "@id": "http://id.loc.gov/vocabulary/descriptionConventions/rda"
+        },
+        "bf:descriptionLanguage": {
+          "@id": "http://id.loc.gov/vocabulary/languages/eng"
+        },
+        "bf:descriptionLevel": {
+          "@id": "http://id.loc.gov/ontologies/bibframe-2-5-0/"
+        },
+        "bf:identifiedBy": {
+          "@id": "_:n350729f3649e47beb756627b77174946b3"
+        },
+        "bf:note": {
+          "@id": "_:n350729f3649e47beb756627b77174946b4"
+        }
+      },
+      {
+        "@id": "_:n350729f3649e47beb756627b77174946b3",
+        "@type": "bf:Local",
+        "bf:assigner": {
+          "@id": "http://id.loc.gov/vocabulary/organizations/dlc"
+        },
+        "rdf:value": "00000e93-dcda-7c94-f773-6ff5bf5bb8b4"
+      },
+      {
+        "@id": "_:n350729f3649e47beb756627b77174946b4",
+        "@type": [
+          "bf:Note",
+          "http://id.loc.gov/vocabulary/mnotetype/internal"
+        ],
+        "rdfs:label": "040  $aDLC$beng$erda$cDLC"
+      },
+      {
+        "@id": "_:n350729f3649e47beb756627b77174946b5",
+        "@type": "bf:AdminMetadata",
+        "bf:agent": {
+          "@id": "http://id.loc.gov/vocabulary/organizations/dlc"
+        },
+        "bf:date": {
+          "@type": "xsd:dateTime",
+          "@value": "2018-08-15T15:32:52"
+        },
+        "bf:status": {
+          "@id": "http://id.loc.gov/vocabulary/mstatus/c"
+        }
+      },
+      {
+        "@id": "_:n350729f3649e47beb756627b77174946b6",
+        "@type": "bf:AdminMetadata",
+        "bf:agent": {
+          "@id": "http://id.loc.gov/vocabulary/organizations/dlcmrc"
+        },
+        "bf:date": {
+          "@type": "xsd:dateTime",
+          "@value": "2025-04-26T00:08:16.263580-04:00"
+        },
+        "bf:generationProcess": {
+          "@id": "https://github.com/lcnetdev/marc2bibframe2/tree/v2.10-dev"
+        },
+        "bf:status": {
+          "@id": "http://id.loc.gov/vocabulary/mstatus/c"
+        }
+      },
+      {
+        "@id": "_:n350729f3649e47beb756627b77174946b7",
+        "@type": [
+          "bf:Contribution",
+          "bf:PrimaryContribution"
+        ],
+        "bf:agent": {
+          "@id": "http://id.loc.gov/rwo/agents/no2018106673"
+        },
+        "bf:role": {
+          "@id": "http://id.loc.gov/vocabulary/relators/ctb"
+        }
+      },
+      {
+        "@id": "_:n350729f3649e47beb756627b77174946b8",
+        "@type": "bf:Lccn",
+        "rdf:value": "n 2018047893"
+      },
+      {
+        "@id": "_:n350729f3649e47beb756627b77174946b9",
+        "@type": "bf:MusicMedium",
+        "bflc:readMarc382": "3820 $asinger$n1$apiano$n1$s2$2lcmpt"
+      },
+      {
+        "@id": "_:n350729f3649e47beb756627b77174946b10",
+        "@type": [
+          "bf:Note",
+          "http://id.loc.gov/vocabulary/mnotetype/descsource"
+        ],
+        "rdfs:label": "Created from auth."
+      },
+      {
+        "@id": "_:n350729f3649e47beb756627b77174946b11",
+        "@type": [
+          "bf:Note",
+          "http://id.loc.gov/vocabulary/mnotetype/datasource"
+        ],
+        "bf:preferredCitation": "Rʻomansner ev erger, 1947",
+        "rdfs:label": "caption (Sari gisher = Sari gisher)"
+      },
+      {
+        "@id": "_:n350729f3649e47beb756627b77174946b12",
+        "@type": "bf:Title",
+        "bf:mainTitle": "Sari gisher"
+      },
+      {
+        "@id": "_:n350729f3649e47beb756627b77174946b13",
+        "@type": "bf:VariantTitle",
+        "bf:mainTitle": {
+          "@language": "zxx-latn",
+          "@value": "Sari kisher"
+        }
+      }
+    ],
+    "@id": "/resources/hubs/00000e93-dcda-7c94-f773-6ff5bf5bb8b4"
+  },
+  {
+    "@context": "http://id.loc.gov/resources/hubs/context.json",
+    "@graph": [
+      {
+        "@id": "http://id.loc.gov/resources/hubs/000011f3-0213-aa57-0471-99e4b029e97f",
+        "@type": [
+          "bf:Hub",
+          "bf:Work"
+        ],
+        "bf:adminMetadata": [
+          {
+            "@id": "_:n51c0039a84ab4b22b89e9e882f1277fbb1"
+          },
+          {
+            "@id": "_:n51c0039a84ab4b22b89e9e882f1277fbb2"
+          },
+          {
+            "@id": "_:n51c0039a84ab4b22b89e9e882f1277fbb3"
+          }
+        ],
+        "bf:contribution": {
+          "@id": "_:n51c0039a84ab4b22b89e9e882f1277fbb6"
+        },
+        "bf:genreForm": [
+          {
+            "@id": "http://id.loc.gov/authorities/genreForms/gf2014026333"
+          },
+          {
+            "@id": "http://id.loc.gov/authorities/genreForms/gf2014026339"
+          }
+        ],
+        "bf:identifiedBy": [
+          {
+            "@id": "_:n51c0039a84ab4b22b89e9e882f1277fbb7"
+          },
+          {
+            "@id": "_:n51c0039a84ab4b22b89e9e882f1277fbb8"
+          }
+        ],
+        "bf:note": [
+          {
+            "@id": "_:n51c0039a84ab4b22b89e9e882f1277fbb9"
+          },
+          {
+            "@id": "_:n51c0039a84ab4b22b89e9e882f1277fbb10"
+          },
+          {
+            "@id": "_:n51c0039a84ab4b22b89e9e882f1277fbb11"
+          }
+        ],
+        "bf:originDate": {
+          "@type": "http://id.loc.gov/datatypes/edtf",
+          "@value": "1972"
+        },
+        "bf:title": {
+          "@id": "_:n51c0039a84ab4b22b89e9e882f1277fbb12"
+        },
+        "bflc:marcKey": "1001 $aZelazny, Roger.$tGuns of Avalon",
+        "dcterms:isPartOf": {
+          "@id": "http://id.loc.gov/resources/hubs"
+        }
+      },
+      {
+        "@id": "_:n51c0039a84ab4b22b89e9e882f1277fbb1",
+        "@type": "bf:AdminMetadata",
+        "bf:agent": {
+          "@id": "http://id.loc.gov/vocabulary/organizations/upb"
+        },
+        "bf:date": {
+          "@type": "xsd:date",
+          "@value": "2016-11-17"
+        },
+        "bf:status": {
+          "@id": "http://id.loc.gov/vocabulary/mstatus/n"
+        }
+      },
+      {
+        "@id": "_:n51c0039a84ab4b22b89e9e882f1277fbb2",
+        "@type": "bf:AdminMetadata",
+        "bf:agent": {
+          "@id": "http://id.loc.gov/vocabulary/organizations/dlcmrc"
+        },
+        "bf:date": {
+          "@type": "xsd:dateTime",
+          "@value": "2025-04-25T21:24:50.042590-04:00"
+        },
+        "bf:generationProcess": {
+          "@id": "https://github.com/lcnetdev/marc2bibframe2/tree/v2.10-dev"
+        },
+        "bf:status": {
+          "@id": "http://id.loc.gov/vocabulary/mstatus/c"
+        }
+      },
+      {
+        "@id": "_:n51c0039a84ab4b22b89e9e882f1277fbb3",
+        "@type": "bf:AdminMetadata",
+        "bf:descriptionConventions": {
+          "@id": "http://id.loc.gov/vocabulary/descriptionConventions/rda"
+        },
+        "bf:descriptionLanguage": {
+          "@id": "http://id.loc.gov/vocabulary/languages/eng"
+        },
+        "bf:descriptionLevel": {
+          "@id": "http://id.loc.gov/ontologies/bibframe-2-5-0/"
+        },
+        "bf:identifiedBy": {
+          "@id": "_:n51c0039a84ab4b22b89e9e882f1277fbb4"
+        },
+        "bf:note": {
+          "@id": "_:n51c0039a84ab4b22b89e9e882f1277fbb5"
+        }
+      },
+      {
+        "@id": "_:n51c0039a84ab4b22b89e9e882f1277fbb4",
+        "@type": "bf:Local",
+        "bf:assigner": {
+          "@id": "http://id.loc.gov/vocabulary/organizations/dlc"
+        },
+        "rdf:value": "000011f3-0213-aa57-0471-99e4b029e97f"
+      },
+      {
+        "@id": "_:n51c0039a84ab4b22b89e9e882f1277fbb5",
+        "@type": [
+          "bf:Note",
+          "http://id.loc.gov/vocabulary/mnotetype/internal"
+        ],
+        "rdfs:label": "040  $aUPB$beng$erda$cUPB"
+      },
+      {
+        "@id": "_:n51c0039a84ab4b22b89e9e882f1277fbb6",
+        "@type": [
+          "bf:Contribution",
+          "bf:PrimaryContribution"
+        ],
+        "bf:agent": {
+          "@id": "http://id.loc.gov/rwo/agents/n79058535"
+        },
+        "bf:role": {
+          "@id": "http://id.loc.gov/vocabulary/relators/ctb"
+        }
+      },
+      {
+        "@id": "_:n51c0039a84ab4b22b89e9e882f1277fbb7",
+        "@type": "bf:OclcNumber",
+        "rdf:value": "oca10634932"
+      },
+      {
+        "@id": "_:n51c0039a84ab4b22b89e9e882f1277fbb8",
+        "@type": "bf:Lccn",
+        "rdf:value": "no2016154871"
+      },
+      {
+        "@id": "_:n51c0039a84ab4b22b89e9e882f1277fbb9",
+        "@type": [
+          "bf:Note",
+          "http://id.loc.gov/vocabulary/mnotetype/datasource"
+        ],
+        "bf:preferredCitation": "Las armas de avalón, 1988",
+        "rdfs:label": "title page (by Roger Zelazny) title page verso (traducción de Elías Sarhan; English title: The guns of Avalon; Original English publication date: 1972)"
+      },
+      {
+        "@id": "_:n51c0039a84ab4b22b89e9e882f1277fbb10",
+        "@type": [
+          "bf:Note",
+          "http://id.loc.gov/vocabulary/mnotetype/datasource"
+        ],
+        "bf:preferredCitation": "Internet speculative fiction database, 16 November 2016",
+        "rdfs:label": "(The guns of Avalon by Roger Zelazny; first published 1972)"
+      },
+      {
+        "@id": "_:n51c0039a84ab4b22b89e9e882f1277fbb11",
+        "@type": [
+          "bf:Note",
+          "http://id.loc.gov/vocabulary/mnotetype/descsource"
+        ],
+        "rdfs:label": "Created from auth."
+      },
+      {
+        "@id": "_:n51c0039a84ab4b22b89e9e882f1277fbb12",
+        "@type": "bf:Title",
+        "bf:mainTitle": "Guns of Avalon"
+      }
+    ],
+    "@id": "/resources/hubs/000011f3-0213-aa57-0471-99e4b029e97f"
+  },
+  {
+    "@context": "http://id.loc.gov/resources/hubs/context.json",
+    "@graph": [
+      {
+        "@id": "http://id.loc.gov/resources/hubs/00001f79-7c72-a8ab-c353-f38c0cc3b052",
+        "@type": [
+          "bf:Hub",
+          "bf:Work"
+        ],
+        "bf:adminMetadata": [
+          {
+            "@id": "_:n1aab52d116f949a1a3560233de708c4ab1"
+          },
+          {
+            "@id": "_:n1aab52d116f949a1a3560233de708c4ab2"
+          },
+          {
+            "@id": "_:n1aab52d116f949a1a3560233de708c4ab3"
+          },
+          {
+            "@id": "_:n1aab52d116f949a1a3560233de708c4ab4"
+          }
+        ],
+        "bf:contribution": {
+          "@id": "_:n1aab52d116f949a1a3560233de708c4ab6"
+        },
+        "bf:identifiedBy": {
+          "@id": "_:n1aab52d116f949a1a3560233de708c4ab7"
+        },
+        "bf:note": {
+          "@id": "_:n1aab52d116f949a1a3560233de708c4ab9"
+        },
+        "bf:title": {
+          "@id": "_:n1aab52d116f949a1a3560233de708c4ab10"
+        },
+        "bflc:marcKey": "1102 $aLondon School of Hygiene and Tropical Medicine.$tMemoir series,",
+        "dcterms:isPartOf": {
+          "@id": "http://id.loc.gov/resources/hubs"
+        }
+      },
+      {
+        "@id": "_:n1aab52d116f949a1a3560233de708c4ab1",
+        "@type": "bf:AdminMetadata",
+        "bf:date": {
+          "@type": "xsd:dateTime",
+          "@value": "1985-11-07T00:00:00"
+        },
+        "bf:status": {
+          "@id": "http://id.loc.gov/vocabulary/mstatus/c"
+        }
+      },
+      {
+        "@id": "_:n1aab52d116f949a1a3560233de708c4ab2",
+        "@type": "bf:AdminMetadata",
+        "bf:date": {
+          "@type": "xsd:date",
+          "@value": "1975-08-14"
+        },
+        "bf:status": {
+          "@id": "http://id.loc.gov/vocabulary/mstatus/n"
+        }
+      },
+      {
+        "@id": "_:n1aab52d116f949a1a3560233de708c4ab3",
+        "@type": "bf:AdminMetadata",
+        "bf:agent": {
+          "@id": "http://id.loc.gov/vocabulary/organizations/dlcmrc"
+        },
+        "bf:date": {
+          "@type": "xsd:dateTime",
+          "@value": "2025-04-25T03:20:21.427299-04:00"
+        },
+        "bf:generationProcess": {
+          "@id": "https://github.com/lcnetdev/marc2bibframe2/tree/v2.10-dev"
+        },
+        "bf:status": {
+          "@id": "http://id.loc.gov/vocabulary/mstatus/c"
+        }
+      },
+      {
+        "@id": "_:n1aab52d116f949a1a3560233de708c4ab4",
+        "@type": "bf:AdminMetadata",
+        "bf:descriptionLevel": {
+          "@id": "http://id.loc.gov/ontologies/bibframe-2-5-0/"
+        },
+        "bf:identifiedBy": {
+          "@id": "_:n1aab52d116f949a1a3560233de708c4ab5"
+        },
+        "bflc:encodingLevel": {
+          "@id": "http://id.loc.gov/vocabulary/menclvl/7"
+        }
+      },
+      {
+        "@id": "_:n1aab52d116f949a1a3560233de708c4ab5",
+        "@type": "bf:Local",
+        "bf:assigner": {
+          "@id": "http://id.loc.gov/vocabulary/organizations/dlc"
+        },
+        "rdf:value": "00001f79-7c72-a8ab-c353-f38c0cc3b052"
+      },
+      {
+        "@id": "_:n1aab52d116f949a1a3560233de708c4ab6",
+        "@type": [
+          "bf:Contribution",
+          "bf:PrimaryContribution"
+        ],
+        "bf:agent": {
+          "@id": "http://id.loc.gov/rwo/agents/n83032513"
+        },
+        "bf:role": {
+          "@id": "http://id.loc.gov/vocabulary/relators/ctb"
+        }
+      },
+      {
+        "@id": "_:n1aab52d116f949a1a3560233de708c4ab7",
+        "@type": "bf:Identifier",
+        "bf:qualifier": "LC-ILSDB",
+        "bf:source": {
+          "@id": "_:n1aab52d116f949a1a3560233de708c4ab8"
+        },
+        "rdf:value": "2221452"
+      },
+      {
+        "@id": "_:n1aab52d116f949a1a3560233de708c4ab8",
+        "@type": "bf:Source",
+        "bf:code": "local"
+      },
+      {
+        "@id": "_:n1aab52d116f949a1a3560233de708c4ab9",
+        "@type": [
+          "bf:Note",
+          "http://id.loc.gov/vocabulary/mnotetype/descsource"
+        ],
+        "rdfs:label": "Created from bib ap."
+      },
+      {
+        "@id": "_:n1aab52d116f949a1a3560233de708c4ab10",
+        "@type": "bf:Title",
+        "bf:mainTitle": "Memoir series"
+      }
+    ],
+    "@id": "/resources/hubs/00001f79-7c72-a8ab-c353-f38c0cc3b052"
+  }
+]

@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  query-service:
+    build:
+      context: ..
+      dockerfile: query-service/Dockerfile
+    image: openedshelf-query-service:latest
+    container_name: openedshelf-query-service
+    restart: unless-stopped
+    ports:
+      - "8788:8788"
+    environment:
+      - NODE_ENV=production
+      - PORT=8788
+      - R2_DATABASE_PATH=/data/openedshelf_master.sqlite
+      - SQLITE_MMAP_SIZE_MB=2048
+      - SQLITE_CACHE_SIZE_KB=65536
+      - QUERY_POOL_SIZE=4
+      - SEARCH_CACHE_TTL_MS=60000
+      - SEARCH_CACHE_MAX=1000
+      - QUERY_TIMEOUT_MS=10000
+      - SEARCH_API_TOKEN=${SEARCH_API_TOKEN}
+    volumes:
+      # Mount the versioned SQLite catalog artifact as strictly read-only
+      - /var/data/openedshelf/openedshelf_master.sqlite:/data/openedshelf_master.sqlite:ro
+    deploy:
+      resources:
+        limits:
+          cpus: '4.0'
+          memory: 6G
+        reservations:
+          cpus: '1.0'
+          memory: 2G
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:8788/health').then(r => process.exit(r.ok ? 0 : 1)).catch(() => process.exit(1))"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
